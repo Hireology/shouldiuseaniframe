@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Should I use an iFrame?</title>
+  <style type="text/css" media="all">
+    body {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #answer {
+      display: none;
+      font-size: 65vw;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <button id="question">Should I use an iFrame?</button>
+  <div id="answer">NO</div>
+  <script type="text/javascript">
+    document.getElementById('question').onclick = function() {
+      document.getElementById('question').style.display = 'none';
+      document.getElementById('answer').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
